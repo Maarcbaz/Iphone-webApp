@@ -1,0 +1,52 @@
+/* RESET  */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    text-decoration: none;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+}
+
+/* TOPAV NAVIGATION  */
+
+.topnav {
+    display: flex;
+    position: relative;
+    top: 20px;
+    align-items: center;
+    justify-content: center;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    height: 40px;
+    position: fixed;
+    width: 100%;
+    align-items: center;
+}
+
+.nav_links {
+    display: flex;
+    gap: 1.6rem;
+    display: flex;
+    align-items: center;
+}
+
+.nav_links img {
+    width: 100%;
+
+}
+
+/* .verctor__7 {
+    position: absolute;
+    top: -20px;
+} */
