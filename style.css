@@ -28,6 +28,7 @@ img {
 }
 
 header {
+    z-index: 100;
     position: fixed;
     width: 100%;
     background-color: #fff;
@@ -45,13 +46,11 @@ input {
     width: 100px;
     height: 25px;
     border-radius: 10px;
-    padding: 4px;
+    padding: 5px;
     border: 1px solid #000;
     display: none;
     outline: none;
 }
-
-
 
 input,
 #search__icon,
@@ -74,6 +73,21 @@ input,
     align-items: center;
 }
 
+.hero {
+    background-image: url(./images/Heroimg1.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 60vh;
+    position: relative;
+    z-index: 1;
+    background-position: center;
+}
+
+.hero_txt {
+    color: #fff;
+    font-size: 4rem;
+    position: absolute;
+}
 
 @media screen and (max-width: 960px) {
 
