@@ -20,33 +20,80 @@ img {
 .topnav {
     display: flex;
     position: relative;
-    top: 20px;
     align-items: center;
+    height: 40px;
     justify-content: center;
+    justify-content: space-between;
+    align-items: center;
 }
 
+
 nav {
+    width: min(100% - 10vw, 120px);
+    margin-inline: auto;
     display: flex;
     justify-content: center;
+    align-items: center;
     height: 40px;
     position: fixed;
+    background-color: #fff;
     width: 100%;
     align-items: center;
+}
+
+
+.nav {
+    display: flex;
+    justify-content: space-between;
 }
 
 .nav_links {
     display: flex;
-    gap: 1.6rem;
+    gap: 2.5rem;
     display: flex;
     align-items: center;
 }
 
-.nav_links img {
-    width: 100%;
 
+.nav_links img {
+    max-width: 100%;
 }
 
-/* .verctor__7 {
-    position: absolute;
-    top: -20px;
-} */
+.link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+}
+
+/* INOUT SEARCH  */
+input {
+    width: 80px;
+    height: 23px;
+    border-radius: 10px;
+    padding: 4px;
+    display: none;
+    transition: all 1s;
+}
+
+input,
+#search__icon,
+.logo_img,
+.copy {
+    cursor: pointer;
+}
+
+
+.searc__field {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    flex-direction: row-reverse;
+}
+
+
+@media screen and (max-width: 960px) {
+    .nav_links a {
+        display: none;
+    }
+}
