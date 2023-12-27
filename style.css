@@ -1,3 +1,6 @@
+/* GOOGLE FONTS  */
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
 /* RESET  */
 * {
     padding: 0;
@@ -7,6 +10,7 @@
 
 body {
     min-height: 100vh;
+    font-family: "Inter", sans-serif;
     text-decoration: none;
 }
 
@@ -39,6 +43,11 @@ header {
     align-items: center;
     justify-content: center;
     gap: 2.6rem;
+}
+
+.menu__icon,
+.overlay {
+    display: none;
 }
 
 /* INOUT SEARCH  */
@@ -74,6 +83,7 @@ input,
     align-items: center;
 }
 
+/* HERO SECTION  */
 .hero {
     background-image: url(./images/Heroimg1.png);
     background-size: cover;
@@ -84,14 +94,44 @@ input,
     background-position: center;
 }
 
-.menu__icon, .overlay {
-    display: none;
+/* HERO TEXT  */
+.hero_txt p:first-of-type {
+    font-size: clamp(2rem, 9vw, 2.5rem);
+    font-weight: 800;
+}
+
+.hero_txt p:nth-child(2) {
+    font-size: clamp(1rem, 9vw, 1.5rem);
+    font-weight: 400;
 }
 
 .hero_txt {
     color: #fff;
-    font-size: 4rem;
+    font-size: 1rem;
     position: absolute;
+    left: 40%;
+    text-align: center;
+    top: 70px;
+}
+
+/* HERO TEXT LINKS  */
+
+.hero_txt_link {
+    padding-top: 1rem;
+    display: flex;
+    gap: 6px;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero_txt_link a {
+    color: aqua;
+    text-decoration: none;
+    border-bottom: transparent;
+}
+
+.hero_txt_link a:hover {
+    text-decoration: underline;
 }
 
 @media screen and (max-width: 960px) {
@@ -143,12 +183,36 @@ input,
     }
 }
 
-@media screen and (max-width: 768px) {}
+@media screen and (max-width: 768px) {
+    .hero_txt {
+            left: 35%;
+        }
+}
 
-@media screen and (max-width: 560px) {}
+@media screen and (max-width: 560px) {
+    .hero {
+        background-image: url(./images/hero\ img2.jpg);
+    }
 
-@media screen and (max-width: 480px) {}
+    .hero_txt {
+        left: 25%;
+    }
+}
 
-@media screen and (max-width: 375px) {}
+@media screen and (max-width: 480px) {
+    .hero_txt {
+        left: 17%;
+    }
+}
 
-@media screen and (max-width: 320px) {}
+@media screen and (max-width: 375px) {
+    .hero_txt {
+        left: 19%;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .hero_txt {
+        left: 15%;
+    }
+}
