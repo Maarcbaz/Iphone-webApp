@@ -70,6 +70,7 @@ input,
 .searc__field {
     display: flex;
     gap: 1rem;
+    flex-direction: row-reverse;
     align-items: center;
 }
 
@@ -81,6 +82,10 @@ input,
     position: relative;
     z-index: 1;
     background-position: center;
+}
+
+.menu__icon, .overlay {
+    display: none;
 }
 
 .hero_txt {
@@ -101,4 +106,49 @@ input,
         height: 20px;
     }
 
+    .menu__icon,
+    .overlay {
+        display: block;
+    }
+
+    .overlay {
+        position: fixed;
+        height: 100vh;
+        width: 0;
+        overflow: hidden;
+        transition: all ease-out .4s;
+        background-color: #000;
+    }
+
+    .overlay__nav__content a {
+        color: #fff;
+        cursor: pointer;
+        font-size: 15px;
+        text-decoration: none;
+        line-height: 3;
+        font-weight: 700;
+        text-transform: capitalize;
+    }
+
+    .overlay__nav__content a:hover {
+        color: #444;
+    }
+
+    .overlay__nav__content {
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        top: 2rem;
+        left: 4rem;
+    }
 }
+
+@media screen and (max-width: 768px) {}
+
+@media screen and (max-width: 560px) {}
+
+@media screen and (max-width: 480px) {}
+
+@media screen and (max-width: 375px) {}
+
+@media screen and (max-width: 320px) {}
