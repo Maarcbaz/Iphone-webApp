@@ -246,12 +246,27 @@ p {
 }
 
 .blc {
-    color: #fff;
+    color: #fff !important;
+}
+
+.blue a {
+    color: cyan;
+}
+
+.red {
+    color: red;
+    text-transform: uppercase;
 }
 
 .section_bto {
     position: absolute;
     top: 65%;
+}
+
+.section_txt {
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
 }
 
 @media screen and (max-width: 1024px) {
