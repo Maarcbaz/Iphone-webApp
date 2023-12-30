@@ -134,6 +134,71 @@ input,
     text-decoration: underline;
 }
 
+/* MAIN CONTENT  */
+main,
+body {
+    background-color: red;
+}
+
+aside {
+    width: min(100% - 7vw, 1200px);
+    margin-inline: auto;
+    position: relative;
+    margin-top: 8px;
+}
+
+.aside_txt {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    top: 50px;
+    left: 43%;
+    position: absolute;
+}
+
+.aside_txt h2 {
+    color: #1d1d1f;
+    text-align: center;
+    font-weight: 800;
+    font-size: clamp(20px, 2.5vw, 30px);
+}
+
+.txt-2 {
+    left: 35%;
+}
+
+.aside_txt p {
+    font-size: clamp(16px, 2.5vw, 20px);
+}
+
+.aside_link {
+    display: flex;
+    align-items: center;
+    gap: 3px;
+}
+
+.aside_link a {
+    text-decoration: none;
+    color: cyan;
+}
+
+.aside_link a:hover {
+    text-decoration: underline;
+}
+
+.aside_img-sm,
+.txt_sm {
+    display: none;
+}
+
+@media screen and (max-width: 1024px) {
+    .navlinks {
+        gap: 1rem;
+    }
+}
+
 @media screen and (max-width: 960px) {
 
     .navlinks,
@@ -185,8 +250,27 @@ input,
 
 @media screen and (max-width: 768px) {
     .hero_txt {
-            left: 35%;
-        }
+        left: 35%;
+    }
+
+    .aside_txt h2 {
+        font-weight: 700;
+        font-size: clamp(28px, 2.5vw, 35px);
+    }
+
+    .aside_txt p {
+        font-size: clamp(1rem, 2.5vw, 1.25rem);
+    }
+
+    .aside_link a {
+        font-size: clamp(12px, 4vw, 14px);
+    }
+
+    .txt-2 {
+        top: 10%;
+        left: 27%;
+    }
+
 }
 
 @media screen and (max-width: 560px) {
@@ -197,22 +281,85 @@ input,
     .hero_txt {
         left: 25%;
     }
+
+    .txt_bg,
+    .aside_img {
+        display: none;
+    }
+
+    .aside_img-sm,
+    .txt_sm {
+        display: block;
+    }
+
+    .txt-2 {
+        left: 25%;
+    }
 }
 
 @media screen and (max-width: 480px) {
     .hero_txt {
-        left: 17%;
+        left: 20%;
+    }
+
+    .aside_txt {
+        top: 20%;
+        left: 32%;
+    }
+
+    .aside_txt h2 {
+        font-weight: 700;
+        font-size: clamp(16px, 2.5vw, 20px);
+    }
+
+    .aside_txt p {
+        font-size: clamp(16px, 2.5vw, 20px);
+    }
+
+    .txt-2 {
+        left: 20%;
     }
 }
 
 @media screen and (max-width: 375px) {
     .hero_txt {
-        left: 19%;
+        left: 24%;
+    }
+
+    .aside_txt {
+        left: 29%;
+    }
+
+    .txt-2 {
+        left: 13%;
     }
 }
 
 @media screen and (max-width: 320px) {
     .hero_txt {
-        left: 15%;
+        left: 18%;
+    }
+
+    /* MAIN  */
+    .aside_txt {
+        top: 20%;
+        left: 28%;
+    }
+
+    .aside_txt h2 {
+        font-weight: 700;
+        font-size: clamp(16px, 2.5vw, 20px);
+    }
+
+    .aside_txt p {
+        font-size: clamp(13px, 2.5vw, 15px);
+    }
+
+    .aside_link a {
+        font-size: clamp(12px, 4vw, 14px);
+    }
+
+    .txt-2 {
+        left: 13%;
     }
 }
