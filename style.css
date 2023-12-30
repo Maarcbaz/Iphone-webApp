@@ -193,6 +193,34 @@ aside {
     display: none;
 }
 
+/* ARTICLE SECTION */
+.container {
+    margin-top: 1rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+    gap: 10px;
+}
+
+.section_1 {
+    position: relative;
+}
+
+.section_txt {
+    position: absolute;
+    top: 10%;
+    left: 20%;
+}
+
+.section_txt h2 {
+    font-size: clamp(25px, 2.5vw, 30px);
+}
+
+.section_1_link {
+    display: flex;
+    align-items: center;
+    gap: 3px;
+}
+
 @media screen and (max-width: 1024px) {
     .navlinks {
         gap: 1rem;
@@ -294,6 +322,9 @@ aside {
 
     .txt-2 {
         left: 25%;
+    }
+    .container {
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     }
 }
 
