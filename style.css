@@ -208,17 +208,50 @@ aside {
 .section_txt {
     position: absolute;
     top: 10%;
-    left: 20%;
+    left: 25%;
+    right: 25%;
 }
 
 .section_txt h2 {
     font-size: clamp(25px, 2.5vw, 30px);
 }
 
+.section_txt p {
+    font-size: clamp(14px, 2.5vw, 18px);
+}
+
+.section_1_link a {
+    text-decoration: none;
+
+}
+
+.section_1_link a:hover {
+    text-decoration: underline;
+}
+
+.section_1_link,
+.section_txt h2,
+p {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    gap: 6px;
+}
+
 .section_1_link {
     display: flex;
     align-items: center;
     gap: 3px;
+}
+
+.blc {
+    color: #fff;
+}
+
+.section_bto {
+    position: absolute;
+    top: 65%;
 }
 
 @media screen and (max-width: 1024px) {
@@ -320,12 +353,37 @@ aside {
         display: block;
     }
 
+    .aside_txt {
+        top: 20%;
+        left: 39%;
+    }
+
     .txt-2 {
-        left: 25%;
+        left: 26%;
     }
+
+    .aside_txt h2 {
+        font-weight: 700;
+        font-size: clamp(20px, 2.5vw, 24px);
+    }
+
+    .aside_txt p {
+        font-size: clamp(14px, 2.5vw, 18px);
+    }
+
     .container {
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     }
+
+    .section_txt h2 {
+        font-size: clamp(18px, 2.5vw, 20px);
+    }
+
+    .section_txt p {
+        font-size: clamp(14px, 2.5vw, 16px);
+    }
+
+
 }
 
 @media screen and (max-width: 480px) {
@@ -363,6 +421,14 @@ aside {
 
     .txt-2 {
         left: 13%;
+    }
+
+    .section_txt h2 {
+        font-size: clamp(14px, 2.5vw, 16px);
+    }
+
+    .section_txt p {
+        font-size: clamp(10px, 2.5vw, 13px);
     }
 }
 
