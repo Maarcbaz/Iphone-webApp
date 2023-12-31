@@ -331,6 +331,20 @@ footer {
     text-decoration: underline;
 }
 
+@media screen and (max-width: 1500px) {
+    .hero_txt p:first-of-type {
+        font-size: 3.5rem !important;
+    }
+
+    .hero_txt p:nth-child(2) {
+        font-size: 2.5rem;
+    }
+
+    a {
+        font-size: 1.5rem;
+    }
+}
+
 @media screen and (max-width: 1024px) {
     .navlinks {
         gap: 1rem;
@@ -384,6 +398,18 @@ footer {
         top: 2rem;
         left: 4rem;
     }
+
+    .hero_txt p:first-of-type {
+        font-size: 2.5rem !important;
+    }
+
+    .hero_txt p:nth-child(2) {
+        font-size: 1.5rem;
+    }
+
+    a {
+        font-size: 1rem;
+    }
 }
 
 @media screen and (max-width: 768px) {
@@ -430,6 +456,18 @@ footer {
         display: block;
     }
 
+    .hero_txt p:first-of-type {
+        font-size: 2rem !important;
+    }
+
+    .hero_txt p:nth-child(2) {
+        font-size: 1.5rem;
+    }
+
+    a {
+        font-size: 1rem;
+    }
+
     .aside_txt {
         top: 20%;
         left: 39%;
@@ -472,7 +510,7 @@ footer {
 
 @media screen and (max-width: 480px) {
     .hero_txt {
-        left: 20%;
+        left: 25%;
     }
 
     .aside_txt {
@@ -545,6 +583,7 @@ footer {
     }
 }
 
+
 @media screen and (min-width: 1600px) {
     .main_img {
         align-items: center;
@@ -556,7 +595,7 @@ footer {
     }
 
     .hero_txt {
-        top: 15%;
+        top: 1%;
         left: 35%;
     }
 
