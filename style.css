@@ -255,6 +255,7 @@ p {
 
 .red {
     color: red;
+    font-size: 12px !important;
     text-transform: uppercase;
 }
 
