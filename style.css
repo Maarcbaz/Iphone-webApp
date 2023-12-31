@@ -276,6 +276,7 @@ p {
     width: min(100% - 9vw, 1200px);
     margin-inline: auto;
     margin-top: 2rem;
+    margin-bottom: 3rem;
 }
 
 ul li {
@@ -288,6 +289,41 @@ li {
 
 }
 
+/* FOOTER  */
+footer {
+    border-top: 1px solid #000;
+    width: min(100% - 9vw, 1200px);
+    margin-inline: auto;
+}
+
+.footer {
+    margin-top: 4rem;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.footer_1__content {
+    display: flex;
+    text-transform: capitalize;
+    flex-direction: column;
+    margin-block: 10px;
+}
+
+.footer_1__content h6 {
+    font-size: 11px;
+    color: rgba(0, 0, 0, 0.776);
+}
+
+.footer_1__content a {
+    font-size: 12px;
+    text-decoration: none;
+    padding-block: 4px;
+    color: rgba(56, 54, 54, 0.685);
+}
+.footer_1__content a:hover {
+    text-decoration: underline;
+}
 @media screen and (max-width: 1024px) {
     .navlinks {
         gap: 1rem;
