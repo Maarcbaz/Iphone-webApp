@@ -270,6 +270,7 @@ p {
 .main_img {
     margin-top: 1rem;
     display: flex;
+    width: 100%;
 }
 
 .main_text {
@@ -321,9 +322,11 @@ footer {
     padding-block: 4px;
     color: rgba(56, 54, 54, 0.685);
 }
+
 .footer_1__content a:hover {
     text-decoration: underline;
 }
+
 @media screen and (max-width: 1024px) {
     .navlinks {
         gap: 1rem;
@@ -535,5 +538,36 @@ footer {
 
     .txt-2 {
         left: 13%;
+    }
+}
+
+@media screen and (min-width: 1600px) {
+    .main_img {
+        align-items: center;
+        justify-content: center;
+    }
+
+    body {
+        font-size: 300%;
+    }
+
+    .hero_txt {
+        left: 35%;
+    }
+
+    .hero_txt p:first-of-type {
+        font-size: 8rem !important;
+    }
+
+    .hero_txt p:nth-child(2) {
+        font-size: 5rem;
+    }
+
+    a {
+        font-size: 2rem;
+    }
+
+    .container {
+        grid-template-columns: repeat(auto-fit, minmax(800px, 1fr));
     }
 }
