@@ -135,10 +135,6 @@ input,
 }
 
 /* MAIN CONTENT  */
-main,
-body {
-    background-color: red;
-}
 
 aside {
     width: min(100% - 7vw, 1200px);
@@ -270,6 +266,28 @@ p {
     gap: 3px;
 }
 
+/* MAIN IMAGE  */
+.main_img {
+    margin-top: 1rem;
+    display: flex;
+}
+
+.main_text {
+    width: min(100% - 9vw, 1200px);
+    margin-inline: auto;
+    margin-top: 2rem;
+}
+
+ul li {
+    font-weight: 300;
+}
+
+li {
+    padding: 10px;
+    font-size: 12px;
+
+}
+
 @media screen and (max-width: 1024px) {
     .navlinks {
         gap: 1rem;
@@ -399,7 +417,14 @@ p {
         font-size: clamp(14px, 2.5vw, 16px);
     }
 
+    .main_text {
+        width: min(100% - 9vw, 1200px);
+        margin-inline: auto;
+    }
 
+    li {
+        font-size: 10px;
+    }
 }
 
 @media screen and (max-width: 480px) {
