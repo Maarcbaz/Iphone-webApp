@@ -65,6 +65,13 @@ input {
     outline: none;
 }
 
+.navlinks a {
+    text-decoration: none;
+    font-size: 13px;
+    color: #000;
+    text-transform: capitalize;
+}
+
 input,
 #search__icon,
 .logo_img,
@@ -329,6 +336,12 @@ footer {
 
 .footer_1__content a:hover {
     text-decoration: underline;
+}
+
+.copy {
+    color: rgba(0, 0, 0, 0.776);
+    float: left;
+    padding-top: 1rem;
 }
 
 @media screen and (max-width: 1500px) {
