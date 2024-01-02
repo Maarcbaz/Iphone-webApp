@@ -21,9 +21,6 @@ html {
 img {
     display: block;
     max-width: 100%;
-}
-
-main img {
     background-color: transparent;
 }
 
