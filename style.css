@@ -24,7 +24,7 @@ img {
 }
 
 main img {
-    border: 2px solid transparent;
+    border: 1px solid rgb(255, 255, 255);
 }
 
 /* TOPAV NAVIGATION  */
